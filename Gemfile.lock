@@ -1,3 +1,9 @@
+PATH
+  remote: ../component_library
+  specs:
+    component_library (0.1.0)
+      rails (~> 5.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -175,6 +181,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  component_library!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
