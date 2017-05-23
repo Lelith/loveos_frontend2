@@ -2,18 +2,18 @@ class WelcomeIndex extends React.Component {
   render() {
     const data = this.props.data || getFakeProducts();
     const productsList = data;
-    const bannerOrganism = getBannerOrganism();
-    const bannerOrganism2 = getBannerOrganism2();
-    const promoboxOrganism = getPromoboxOrganism();
-    const promoboxOrganism2 = getPromoboxOrganism2();
+    const advertBanner = getAdvertBanner();
+    const advertBanner2 = getAdvertBanner2();
+    const advertPromobox = getAdvertPromobox();
+    const advertPromobox2 = getAdvertPromobox2();
 
     return (
       <div>
-        <PromoboxOrganism {...promoboxOrganism}></PromoboxOrganism>
-        <BannerOrganism  {...bannerOrganism}></BannerOrganism>
+        <AdvertPromobox {...advertPromobox}></AdvertPromobox>
+        <AdvertBanner  {...advertBanner}></AdvertBanner>
         <ProductsList productsList={productsList}></ProductsList>
-        <BannerOrganism {...bannerOrganism2}></BannerOrganism>
-        <PromoboxOrganism {...promoboxOrganism2}></PromoboxOrganism>
+        <AdvertBanner {...advertBanner2}></AdvertBanner>
+        <AdvertPromobox {...advertPromobox2}></AdvertPromobox>
       </div>
     )
   }
@@ -78,7 +78,7 @@ getFakeProducts = () => {
   ]
 }
 
-getBannerOrganism = () => {
+getAdvertBanner = () => {
   return {
     Banner: {
       className: "banner-success",
@@ -98,7 +98,7 @@ getBannerOrganism = () => {
   }
 }
 
-getBannerOrganism2 = () => {
+getAdvertBanner2 = () => {
   return {
     Banner: {
       className: "banner-warning",
@@ -115,7 +115,7 @@ getBannerOrganism2 = () => {
   }
 }
 
-getPromoboxOrganism = () => {
+getAdvertPromobox = () => {
   return {
     Promobox: {
       Title: {
@@ -128,7 +128,7 @@ getPromoboxOrganism = () => {
   }
 }
 
-getPromoboxOrganism2 = () => {
+getAdvertPromobox2 = () => {
   return {
     Promobox: {
       Title: {

@@ -2,16 +2,16 @@ class ListIndex extends React.Component {
   render() {
     const data = this.props.data || getFakeProducts2();
     const productsList = data;
-    const bannerOrganism = getBannerOrganism3();
-    const bannerOrganism2 = getBannerOrganism4();
-    const promoboxOrganism = getPromoboxOrganism3();
+    const advertBanner = getAdvertBanner3();
+    const advertBanner2 = getAdvertBanner4();
+    const advertPromobox = getAdvertPromobox3();
 
     return (
       <div>
         <ProductsList productsList={productsList}></ProductsList>
-        <BannerOrganism {...bannerOrganism}></BannerOrganism>
-        <PromoboxOrganism {...promoboxOrganism}></PromoboxOrganism>
-        <BannerOrganism {...bannerOrganism2}></BannerOrganism>
+        <AdvertBanner {...advertBanner}></AdvertBanner>
+        <AdvertPromobox {...advertPromobox}></AdvertPromobox>
+        <AdvertBanner {...advertBanner2}></AdvertBanner>
       </div>
     )
   }
@@ -112,7 +112,7 @@ getFakeProducts2 = () => {
   ]
 }
 
-getBannerOrganism3 = () => {
+getAdvertBanner3 = () => {
   return {
     Banner: {
       className: "banner-info",
@@ -123,7 +123,7 @@ getBannerOrganism3 = () => {
   }
 }
 
-getBannerOrganism4 = () => {
+getAdvertBanner4 = () => {
   return {
     Banner: {
       className: "banner-warning",
@@ -137,7 +137,7 @@ getBannerOrganism4 = () => {
   }
 }
 
-getPromoboxOrganism3 = () => {
+getAdvertPromobox3 = () => {
   return {
     Promobox: {
       Title: {
